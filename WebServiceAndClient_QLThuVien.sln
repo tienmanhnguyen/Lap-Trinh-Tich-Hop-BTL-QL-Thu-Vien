@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service_ThuVien", "DemoWebService\Service_ThuVien.csproj", "{F64C1D65-CAFF-449F-B35C-CD4D723F473A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clients_ThuVien", "Clients_ThuVien\Clients_ThuVien.csproj", "{5897769D-8898-4DDB-9805-CD863373041E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F64C1D65-CAFF-449F-B35C-CD4D723F473A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64C1D65-CAFF-449F-B35C-CD4D723F473A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64C1D65-CAFF-449F-B35C-CD4D723F473A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64C1D65-CAFF-449F-B35C-CD4D723F473A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5897769D-8898-4DDB-9805-CD863373041E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5897769D-8898-4DDB-9805-CD863373041E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5897769D-8898-4DDB-9805-CD863373041E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5897769D-8898-4DDB-9805-CD863373041E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61CD29FD-169A-4A26-A959-0A4F35B53413}
+	EndGlobalSection
+EndGlobal

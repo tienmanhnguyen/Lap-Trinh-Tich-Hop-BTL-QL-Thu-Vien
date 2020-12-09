@@ -1,0 +1,7 @@
+D:\visual code web\DemoWebService\DemoWebService\obj\Debug\DemoWebService.csprojAssemblyReference.cache
+D:\visual code web\DemoWebService\DemoWebService\obj\Debug\DemoWebService.csproj.CoreCompileInputs.cache
+D:\visual code web\DemoWebService\DemoWebService\bin\DemoWebService.dll.config
+D:\visual code web\DemoWebService\DemoWebService\bin\DemoWebService.dll
+D:\visual code web\DemoWebService\DemoWebService\bin\DemoWebService.pdb
+D:\visual code web\DemoWebService\DemoWebService\obj\Debug\DemoWebService.dll
+D:\visual code web\DemoWebService\DemoWebService\obj\Debug\DemoWebService.pdb
