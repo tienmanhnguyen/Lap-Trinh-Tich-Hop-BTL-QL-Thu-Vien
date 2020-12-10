@@ -24,12 +24,10 @@ namespace DemoWebService
 
         MyContext context = new MyContext();
         DataTable table = new DataTable();
-        DemoWebService.DBAccess myConnect = new DemoWebService.DBAccess();
 
         //======================== Manh viet cho nay===================================
 
         // Phần quản lý nhà xuất bản
-
 
         [WebMethod]
         public string LayDanhSachNXB()
@@ -48,8 +46,6 @@ namespace DemoWebService
             //}
             //String result = JsonConvert.SerializeObject(dsNXB);
             //return result;
-
-
 
            
                 DataTable dataTable = new DataTable();
