@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service_ThuVien", "DemoWebService\Service_ThuVien.csproj", "{F64C1D65-CAFF-449F-B35C-CD4D723F473A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clients_ThuVien", "Clients_ThuVien\Clients_ThuVien.csproj", "{5897769D-8898-4DDB-9805-CD863373041E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F64C1D65-CAFF-449F-B35C-CD4D723F473A} = {F64C1D65-CAFF-449F-B35C-CD4D723F473A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

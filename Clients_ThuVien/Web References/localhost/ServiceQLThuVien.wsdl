@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="LayDanhSachNXB">
+        <s:complexType />
+      </s:element>
+      <s:element name="LayDanhSachNXBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LayDanhSachNXBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThemNXB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diaChi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThemNXBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThemNXBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SuaNXB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diaChi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SuaNXBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SuaNXBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XoaNXB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XoaNXBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XoaNXBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TimKiemNXB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="timkiem" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TimKiemNXBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TimKiemNXBResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LayDanhSachTacGia">
+        <s:complexType />
+      </s:element>
+      <s:element name="LayDanhSachTacGiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LayDanhSachTacGiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThemTG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vaitro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThemTGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ThemTGResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SuaTG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vaitro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SuaTGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SuaTGResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XoaTG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XoaTGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XoaTGResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TimKiemTG">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="timkiem" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TimKiemTGResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TimKiemTGResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PhieuMuon">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PhieuMuonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PhieuMuonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TinhTrangMuon">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TinhTrangMuonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TinhTrangMuonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LayTenBanDoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LayTenBanDocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LayTenBanDocResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LayMaBanDoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LayMaBanDocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LayMaBanDocResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KTPhieuMuon">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KTPhieuMuonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KTPhieuMuonResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DangNhap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DangNhapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DangNhapResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LayDanhSachNXBSoapIn">
+    <wsdl:part name="parameters" element="tns:LayDanhSachNXB" />
+  </wsdl:message>
+  <wsdl:message name="LayDanhSachNXBSoapOut">
+    <wsdl:part name="parameters" element="tns:LayDanhSachNXBResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThemNXBSoapIn">
+    <wsdl:part name="parameters" element="tns:ThemNXB" />
+  </wsdl:message>
+  <wsdl:message name="ThemNXBSoapOut">
+    <wsdl:part name="parameters" element="tns:ThemNXBResponse" />
+  </wsdl:message>
+  <wsdl:message name="SuaNXBSoapIn">
+    <wsdl:part name="parameters" element="tns:SuaNXB" />
+  </wsdl:message>
+  <wsdl:message name="SuaNXBSoapOut">
+    <wsdl:part name="parameters" element="tns:SuaNXBResponse" />
+  </wsdl:message>
+  <wsdl:message name="XoaNXBSoapIn">
+    <wsdl:part name="parameters" element="tns:XoaNXB" />
+  </wsdl:message>
+  <wsdl:message name="XoaNXBSoapOut">
+    <wsdl:part name="parameters" element="tns:XoaNXBResponse" />
+  </wsdl:message>
+  <wsdl:message name="TimKiemNXBSoapIn">
+    <wsdl:part name="parameters" element="tns:TimKiemNXB" />
+  </wsdl:message>
+  <wsdl:message name="TimKiemNXBSoapOut">
+    <wsdl:part name="parameters" element="tns:TimKiemNXBResponse" />
+  </wsdl:message>
+  <wsdl:message name="LayDanhSachTacGiaSoapIn">
+    <wsdl:part name="parameters" element="tns:LayDanhSachTacGia" />
+  </wsdl:message>
+  <wsdl:message name="LayDanhSachTacGiaSoapOut">
+    <wsdl:part name="parameters" element="tns:LayDanhSachTacGiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThemTGSoapIn">
+    <wsdl:part name="parameters" element="tns:ThemTG" />
+  </wsdl:message>
+  <wsdl:message name="ThemTGSoapOut">
+    <wsdl:part name="parameters" element="tns:ThemTGResponse" />
+  </wsdl:message>
+  <wsdl:message name="SuaTGSoapIn">
+    <wsdl:part name="parameters" element="tns:SuaTG" />
+  </wsdl:message>
+  <wsdl:message name="SuaTGSoapOut">
+    <wsdl:part name="parameters" element="tns:SuaTGResponse" />
+  </wsdl:message>
+  <wsdl:message name="XoaTGSoapIn">
+    <wsdl:part name="parameters" element="tns:XoaTG" />
+  </wsdl:message>
+  <wsdl:message name="XoaTGSoapOut">
+    <wsdl:part name="parameters" element="tns:XoaTGResponse" />
+  </wsdl:message>
+  <wsdl:message name="TimKiemTGSoapIn">
+    <wsdl:part name="parameters" element="tns:TimKiemTG" />
+  </wsdl:message>
+  <wsdl:message name="TimKiemTGSoapOut">
+    <wsdl:part name="parameters" element="tns:TimKiemTGResponse" />
+  </wsdl:message>
+  <wsdl:message name="PhieuMuonSoapIn">
+    <wsdl:part name="parameters" element="tns:PhieuMuon" />
+  </wsdl:message>
+  <wsdl:message name="PhieuMuonSoapOut">
+    <wsdl:part name="parameters" element="tns:PhieuMuonResponse" />
+  </wsdl:message>
+  <wsdl:message name="TinhTrangMuonSoapIn">
+    <wsdl:part name="parameters" element="tns:TinhTrangMuon" />
+  </wsdl:message>
+  <wsdl:message name="TinhTrangMuonSoapOut">
+    <wsdl:part name="parameters" element="tns:TinhTrangMuonResponse" />
+  </wsdl:message>
+  <wsdl:message name="LayTenBanDocSoapIn">
+    <wsdl:part name="parameters" element="tns:LayTenBanDoc" />
+  </wsdl:message>
+  <wsdl:message name="LayTenBanDocSoapOut">
+    <wsdl:part name="parameters" element="tns:LayTenBanDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="LayMaBanDocSoapIn">
+    <wsdl:part name="parameters" element="tns:LayMaBanDoc" />
+  </wsdl:message>
+  <wsdl:message name="LayMaBanDocSoapOut">
+    <wsdl:part name="parameters" element="tns:LayMaBanDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="KTPhieuMuonSoapIn">
+    <wsdl:part name="parameters" element="tns:KTPhieuMuon" />
+  </wsdl:message>
+  <wsdl:message name="KTPhieuMuonSoapOut">
+    <wsdl:part name="parameters" element="tns:KTPhieuMuonResponse" />
+  </wsdl:message>
+  <wsdl:message name="DangNhapSoapIn">
+    <wsdl:part name="parameters" element="tns:DangNhap" />
+  </wsdl:message>
+  <wsdl:message name="DangNhapSoapOut">
+    <wsdl:part name="parameters" element="tns:DangNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="LayDanhSachNXBHttpGetIn" />
+  <wsdl:message name="LayDanhSachNXBHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ThemNXBHttpGetIn">
+    <wsdl:part name="ten" type="s:string" />
+    <wsdl:part name="diaChi" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ThemNXBHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SuaNXBHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+    <wsdl:part name="ten" type="s:string" />
+    <wsdl:part name="diaChi" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SuaNXBHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="XoaNXBHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="XoaNXBHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TimKiemNXBHttpGetIn">
+    <wsdl:part name="timkiem" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TimKiemNXBHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LayDanhSachTacGiaHttpGetIn" />
+  <wsdl:message name="LayDanhSachTacGiaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ThemTGHttpGetIn">
+    <wsdl:part name="ten" type="s:string" />
+    <wsdl:part name="vaitro" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ThemTGHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SuaTGHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+    <wsdl:part name="ten" type="s:string" />
+    <wsdl:part name="vaitro" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SuaTGHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="XoaTGHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="XoaTGHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TimKiemTGHttpGetIn">
+    <wsdl:part name="timkiem" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TimKiemTGHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PhieuMuonHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PhieuMuonHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TinhTrangMuonHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TinhTrangMuonHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LayTenBanDocHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LayTenBanDocHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LayMaBanDocHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LayMaBanDocHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="KTPhieuMuonHttpGetIn">
+    <wsdl:part name="id" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="KTPhieuMuonHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="DangNhapHttpGetIn">
+    <wsdl:part name="ten" type="s:string" />
+    <wsdl:part name="matkhau" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DangNhapHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceQLThuVienSoap">
+    <wsdl:operation name="LayDanhSachNXB">
+      <wsdl:input message="tns:LayDanhSachNXBSoapIn" />
+      <wsdl:output message="tns:LayDanhSachNXBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemNXB">
+      <wsdl:input message="tns:ThemNXBSoapIn" />
+      <wsdl:output message="tns:ThemNXBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaNXB">
+      <wsdl:input message="tns:SuaNXBSoapIn" />
+      <wsdl:output message="tns:SuaNXBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaNXB">
+      <wsdl:input message="tns:XoaNXBSoapIn" />
+      <wsdl:output message="tns:XoaNXBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemNXB">
+      <wsdl:input message="tns:TimKiemNXBSoapIn" />
+      <wsdl:output message="tns:TimKiemNXBSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LayDanhSachTacGia">
+      <wsdl:input message="tns:LayDanhSachTacGiaSoapIn" />
+      <wsdl:output message="tns:LayDanhSachTacGiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemTG">
+      <wsdl:input message="tns:ThemTGSoapIn" />
+      <wsdl:output message="tns:ThemTGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaTG">
+      <wsdl:input message="tns:SuaTGSoapIn" />
+      <wsdl:output message="tns:SuaTGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaTG">
+      <wsdl:input message="tns:XoaTGSoapIn" />
+      <wsdl:output message="tns:XoaTGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemTG">
+      <wsdl:input message="tns:TimKiemTGSoapIn" />
+      <wsdl:output message="tns:TimKiemTGSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PhieuMuon">
+      <wsdl:input message="tns:PhieuMuonSoapIn" />
+      <wsdl:output message="tns:PhieuMuonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TinhTrangMuon">
+      <wsdl:input message="tns:TinhTrangMuonSoapIn" />
+      <wsdl:output message="tns:TinhTrangMuonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LayTenBanDoc">
+      <wsdl:input message="tns:LayTenBanDocSoapIn" />
+      <wsdl:output message="tns:LayTenBanDocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LayMaBanDoc">
+      <wsdl:input message="tns:LayMaBanDocSoapIn" />
+      <wsdl:output message="tns:LayMaBanDocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KTPhieuMuon">
+      <wsdl:input message="tns:KTPhieuMuonSoapIn" />
+      <wsdl:output message="tns:KTPhieuMuonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DangNhap">
+      <wsdl:input message="tns:DangNhapSoapIn" />
+      <wsdl:output message="tns:DangNhapSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceQLThuVienHttpGet">
+    <wsdl:operation name="LayDanhSachNXB">
+      <wsdl:input message="tns:LayDanhSachNXBHttpGetIn" />
+      <wsdl:output message="tns:LayDanhSachNXBHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemNXB">
+      <wsdl:input message="tns:ThemNXBHttpGetIn" />
+      <wsdl:output message="tns:ThemNXBHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaNXB">
+      <wsdl:input message="tns:SuaNXBHttpGetIn" />
+      <wsdl:output message="tns:SuaNXBHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaNXB">
+      <wsdl:input message="tns:XoaNXBHttpGetIn" />
+      <wsdl:output message="tns:XoaNXBHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemNXB">
+      <wsdl:input message="tns:TimKiemNXBHttpGetIn" />
+      <wsdl:output message="tns:TimKiemNXBHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LayDanhSachTacGia">
+      <wsdl:input message="tns:LayDanhSachTacGiaHttpGetIn" />
+      <wsdl:output message="tns:LayDanhSachTacGiaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemTG">
+      <wsdl:input message="tns:ThemTGHttpGetIn" />
+      <wsdl:output message="tns:ThemTGHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaTG">
+      <wsdl:input message="tns:SuaTGHttpGetIn" />
+      <wsdl:output message="tns:SuaTGHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaTG">
+      <wsdl:input message="tns:XoaTGHttpGetIn" />
+      <wsdl:output message="tns:XoaTGHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemTG">
+      <wsdl:input message="tns:TimKiemTGHttpGetIn" />
+      <wsdl:output message="tns:TimKiemTGHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PhieuMuon">
+      <wsdl:input message="tns:PhieuMuonHttpGetIn" />
+      <wsdl:output message="tns:PhieuMuonHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TinhTrangMuon">
+      <wsdl:input message="tns:TinhTrangMuonHttpGetIn" />
+      <wsdl:output message="tns:TinhTrangMuonHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LayTenBanDoc">
+      <wsdl:input message="tns:LayTenBanDocHttpGetIn" />
+      <wsdl:output message="tns:LayTenBanDocHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LayMaBanDoc">
+      <wsdl:input message="tns:LayMaBanDocHttpGetIn" />
+      <wsdl:output message="tns:LayMaBanDocHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KTPhieuMuon">
+      <wsdl:input message="tns:KTPhieuMuonHttpGetIn" />
+      <wsdl:output message="tns:KTPhieuMuonHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DangNhap">
+      <wsdl:input message="tns:DangNhapHttpGetIn" />
+      <wsdl:output message="tns:DangNhapHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceQLThuVienSoap" type="tns:ServiceQLThuVienSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LayDanhSachNXB">
+      <soap:operation soapAction="http://tempuri.org/LayDanhSachNXB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemNXB">
+      <soap:operation soapAction="http://tempuri.org/ThemNXB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaNXB">
+      <soap:operation soapAction="http://tempuri.org/SuaNXB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaNXB">
+      <soap:operation soapAction="http://tempuri.org/XoaNXB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemNXB">
+      <soap:operation soapAction="http://tempuri.org/TimKiemNXB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayDanhSachTacGia">
+      <soap:operation soapAction="http://tempuri.org/LayDanhSachTacGia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemTG">
+      <soap:operation soapAction="http://tempuri.org/ThemTG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaTG">
+      <soap:operation soapAction="http://tempuri.org/SuaTG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaTG">
+      <soap:operation soapAction="http://tempuri.org/XoaTG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemTG">
+      <soap:operation soapAction="http://tempuri.org/TimKiemTG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PhieuMuon">
+      <soap:operation soapAction="http://tempuri.org/PhieuMuon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TinhTrangMuon">
+      <soap:operation soapAction="http://tempuri.org/TinhTrangMuon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayTenBanDoc">
+      <soap:operation soapAction="http://tempuri.org/LayTenBanDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayMaBanDoc">
+      <soap:operation soapAction="http://tempuri.org/LayMaBanDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KTPhieuMuon">
+      <soap:operation soapAction="http://tempuri.org/KTPhieuMuon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DangNhap">
+      <soap:operation soapAction="http://tempuri.org/DangNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceQLThuVienSoap12" type="tns:ServiceQLThuVienSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LayDanhSachNXB">
+      <soap12:operation soapAction="http://tempuri.org/LayDanhSachNXB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemNXB">
+      <soap12:operation soapAction="http://tempuri.org/ThemNXB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaNXB">
+      <soap12:operation soapAction="http://tempuri.org/SuaNXB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaNXB">
+      <soap12:operation soapAction="http://tempuri.org/XoaNXB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemNXB">
+      <soap12:operation soapAction="http://tempuri.org/TimKiemNXB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayDanhSachTacGia">
+      <soap12:operation soapAction="http://tempuri.org/LayDanhSachTacGia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemTG">
+      <soap12:operation soapAction="http://tempuri.org/ThemTG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaTG">
+      <soap12:operation soapAction="http://tempuri.org/SuaTG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaTG">
+      <soap12:operation soapAction="http://tempuri.org/XoaTG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemTG">
+      <soap12:operation soapAction="http://tempuri.org/TimKiemTG" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PhieuMuon">
+      <soap12:operation soapAction="http://tempuri.org/PhieuMuon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TinhTrangMuon">
+      <soap12:operation soapAction="http://tempuri.org/TinhTrangMuon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayTenBanDoc">
+      <soap12:operation soapAction="http://tempuri.org/LayTenBanDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayMaBanDoc">
+      <soap12:operation soapAction="http://tempuri.org/LayMaBanDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KTPhieuMuon">
+      <soap12:operation soapAction="http://tempuri.org/KTPhieuMuon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DangNhap">
+      <soap12:operation soapAction="http://tempuri.org/DangNhap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceQLThuVienHttpGet" type="tns:ServiceQLThuVienHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="LayDanhSachNXB">
+      <http:operation location="/LayDanhSachNXB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemNXB">
+      <http:operation location="/ThemNXB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaNXB">
+      <http:operation location="/SuaNXB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaNXB">
+      <http:operation location="/XoaNXB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemNXB">
+      <http:operation location="/TimKiemNXB" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayDanhSachTacGia">
+      <http:operation location="/LayDanhSachTacGia" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemTG">
+      <http:operation location="/ThemTG" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaTG">
+      <http:operation location="/SuaTG" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaTG">
+      <http:operation location="/XoaTG" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemTG">
+      <http:operation location="/TimKiemTG" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PhieuMuon">
+      <http:operation location="/PhieuMuon" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TinhTrangMuon">
+      <http:operation location="/TinhTrangMuon" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayTenBanDoc">
+      <http:operation location="/LayTenBanDoc" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayMaBanDoc">
+      <http:operation location="/LayMaBanDoc" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KTPhieuMuon">
+      <http:operation location="/KTPhieuMuon" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DangNhap">
+      <http:operation location="/DangNhap" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceQLThuVien">
+    <wsdl:port name="ServiceQLThuVienSoap" binding="tns:ServiceQLThuVienSoap">
+      <soap:address location="http://localhost:51599/ServiceQLThuVien.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceQLThuVienSoap12" binding="tns:ServiceQLThuVienSoap12">
+      <soap12:address location="http://localhost:51599/ServiceQLThuVien.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceQLThuVienHttpGet" binding="tns:ServiceQLThuVienHttpGet">
+      <http:address location="http://localhost:51599/ServiceQLThuVien.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

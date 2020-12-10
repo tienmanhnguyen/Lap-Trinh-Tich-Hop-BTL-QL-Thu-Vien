@@ -23,6 +23,9 @@ namespace DemoWebService.Models
         [StringLength(100)]
         public string DiaChi { get; set; }
 
+        [StringLength(50)]
+        public string Email { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DauSach> DauSaches { get; set; }
     }

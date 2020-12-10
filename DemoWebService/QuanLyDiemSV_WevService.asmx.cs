@@ -20,7 +20,7 @@ namespace DemoWebService
     public class QuanLyDiemSV_WevService : System.Web.Services.WebService
     {
         DataTable bangDiemThi = new DataTable();
-        WebService_QLSinhVien.DBAccess myConnect = new WebService_QLSinhVien.DBAccess();
+        DBAccess myConnect = new DemoWebService.DBAccess();
         
         [WebMethod]
         public void ThemDiem(String maSV, String maMonHoc, float diemthi)
@@ -37,7 +37,6 @@ namespace DemoWebService
             string result = JsonConvert.SerializeObject(bangDiemThi);
             return result;
         }
-
         [WebMethod]
         public string TimKiemDiemSinhVien(string id)
         {

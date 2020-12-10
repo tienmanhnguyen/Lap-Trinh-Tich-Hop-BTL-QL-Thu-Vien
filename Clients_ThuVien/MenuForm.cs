@@ -16,5 +16,32 @@ namespace Clients_ThuVien
         {
             InitializeComponent();
         }
+
+        private void danhMucSachToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddForm(Form f)
+        {
+            this.panelNoiDung.Controls.Clear();
+            f.TopLevel = false;
+            f.AutoScroll = true;
+            f.FormBorderStyle = FormBorderStyle.None;
+            f.Dock = DockStyle.Fill;
+            this.panelNoiDung.Controls.Add(f);
+            f.Show();
+        }
+
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+            QuanLyDauSach ql = new QuanLyDauSach();
+            AddForm(ql);
+        }
+
+        private void lamTheBanĐocToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

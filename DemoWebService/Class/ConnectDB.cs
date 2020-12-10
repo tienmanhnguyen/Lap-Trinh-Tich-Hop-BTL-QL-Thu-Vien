@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace WebService_QLSinhVien
+namespace DemoWebService
 {
     class DBAccess
     {
@@ -16,7 +16,7 @@ namespace WebService_QLSinhVien
         private static SqlDataAdapter adapter = new SqlDataAdapter();
         public SqlTransaction DbTran;
 
-        private static string strConnString = "Data Source=DESKTOP-AN05VTG;Initial Catalog=QuanLySinhVen_WebService;Integrated Security=True";
+        private static string strConnString = "Data Source=DESKTOP-AN05VTG;Initial Catalog=LapTrinhTichHop;Integrated Security=True";
 
 
 
@@ -58,6 +58,14 @@ namespace WebService_QLSinhVien
             }
             cmd.Dispose();//Giải phóng bộ nhớ
             cmd = null;
+        }
+
+        public static DataTable GetDataToTable(string sql)
+        {
+            SqlDataAdapter dap = new SqlDataAdapter(sql, connection); //Định nghĩa đối tượng thuộc lớp SqlDataAdapter
+            DataTable table = new DataTable();                 //Khai báo đối tượng table thuộc lớp DataTable
+            dap.Fill(table);                                   //Đổ kết quả từ câu lệnh sql vào table
+            return table;
         }
 
         public int executeDataAdapter(DataTable tblName, string strSelectSql)

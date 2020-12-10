@@ -20,6 +20,12 @@ namespace DemoWebService.Models
         [StringLength(50)]
         public string TenTacGia { get; set; }
 
+        [StringLength(50)]
+        public string VaiTro { get; set; }
+
+        [StringLength(50)]
+        public string Email { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DauSach> DauSaches { get; set; }
     }
