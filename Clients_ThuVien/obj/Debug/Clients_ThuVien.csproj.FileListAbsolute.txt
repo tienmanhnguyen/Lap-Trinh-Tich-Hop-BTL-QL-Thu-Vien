@@ -1,0 +1,16 @@
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\bin\Debug\Clients_ThuVien.exe.config
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\bin\Debug\Clients_ThuVien.exe
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\bin\Debug\Clients_ThuVien.pdb
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.csprojAssemblyReference.cache
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.Properties.Resources.resources
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.QuanLyDauSach.resources
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.csproj.GenerateResource.cache
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.csproj.CoreCompileInputs.cache
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.exe
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.pdb
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.QuanLyBanDoc.resources
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\bin\Debug\Json.Net.dll
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\bin\Debug\Newtonsoft.Json.dll
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\bin\Debug\Newtonsoft.Json.xml
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.csproj.CopyComplete
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\Clients_ThuVien\obj\Debug\Clients_ThuVien.QuanLyCuonSach.resources

@@ -22,9 +22,9 @@ namespace DemoWebService.Models
 
         public int? Id_DauSach { get; set; }
 
-        public virtual DauSach DauSach { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietMuon> ChiTietMuons { get; set; }
+
+        public virtual DauSach DauSach { get; set; }
     }
 }
