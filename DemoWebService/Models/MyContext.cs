@@ -14,9 +14,9 @@ namespace DemoWebService.Models
 
         public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<BanDoc> BanDocs { get; set; }
-        public virtual DbSet<CuonSach> CuonSaches { get; set; }
         public virtual DbSet<ChiTietMuon> ChiTietMuons { get; set; }
         public virtual DbSet<ChuDe> ChuDes { get; set; }
+        public virtual DbSet<CuonSach> CuonSaches { get; set; }
         public virtual DbSet<DauSach> DauSaches { get; set; }
         public virtual DbSet<NhaXuatBan> NhaXuatBans { get; set; }
         public virtual DbSet<PhieuMuon> PhieuMuons { get; set; }
@@ -38,6 +38,11 @@ namespace DemoWebService.Models
                 .WithOptional(e => e.BanDoc)
                 .HasForeignKey(e => e.Id_BanDoc);
 
+            modelBuilder.Entity<ChuDe>()
+                .HasMany(e => e.DauSaches)
+                .WithMany(e => e.ChuDes)
+                .Map(m => m.ToTable("ChuDe_DauSach").MapLeftKey("Id_ChuDe").MapRightKey("Id_DauSach"));
+
             modelBuilder.Entity<CuonSach>()
                 .Property(e => e.SoDanhNhan)
                 .IsFixedLength();
@@ -47,11 +52,6 @@ namespace DemoWebService.Models
                 .WithRequired(e => e.CuonSach)
                 .HasForeignKey(e => e.Id_CuonSach)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<ChuDe>()
-                .HasMany(e => e.DauSaches)
-                .WithMany(e => e.ChuDes)
-                .Map(m => m.ToTable("ChuDe_DauSach").MapLeftKey("Id_ChuDe").MapRightKey("Id_DauSach"));
 
             modelBuilder.Entity<DauSach>()
                 .Property(e => e.ISBN)

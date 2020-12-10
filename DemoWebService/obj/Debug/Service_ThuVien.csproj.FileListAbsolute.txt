@@ -14,3 +14,20 @@ D:\visual code web\DemoWebService\DemoWebService\obj\Debug\Service_ThuVien.cspro
 D:\visual code web\DemoWebService\DemoWebService\obj\Debug\Service_ThuVien.csproj.CopyComplete
 D:\visual code web\DemoWebService\DemoWebService\obj\Debug\DemoWebService.dll
 D:\visual code web\DemoWebService\DemoWebService\obj\Debug\DemoWebService.pdb
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\DemoWebService.dll.config
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\DemoWebService.dll
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\DemoWebService.pdb
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\EntityFramework.dll
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\EntityFramework.SqlServer.dll
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\Newtonsoft.Json.dll
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\System.Net.Http.Formatting.dll
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\EntityFramework.xml
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\EntityFramework.SqlServer.xml
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\Newtonsoft.Json.xml
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\System.Net.Http.Formatting.xml
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\obj\Debug\Service_ThuVien.csprojAssemblyReference.cache
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\obj\Debug\Service_ThuVien.csproj.CoreCompileInputs.cache
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\obj\Debug\Service_ThuVien.csproj.CopyComplete
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\obj\Debug\DemoWebService.dll
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\obj\Debug\DemoWebService.pdb
+E:\Slide\CongNgheLapTrinhTichHop\Lap-Trinh-Tich-Hop-BTL-QL-Thu-Vien\DemoWebService\bin\Json.Net.dll
