@@ -7,7 +7,6 @@ using System.Web.Services;
 using System.Data;
 using Newtonsoft.Json;
 using System.Data.Entity;
-using DemoWebService.Class;
 
 namespace DemoWebService
 {
