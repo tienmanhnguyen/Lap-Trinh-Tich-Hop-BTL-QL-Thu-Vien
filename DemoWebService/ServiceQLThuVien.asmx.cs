@@ -85,7 +85,7 @@ namespace DemoWebService
             String result = LayDanhSachNXB();
             return result;
         }
-
+        //
         [WebMethod]
         public string SuaNXB(int id, String ten, String diaChi, String email)
         {
@@ -103,7 +103,7 @@ namespace DemoWebService
             String result = LayDanhSachNXB();
             return result;
         }
-
+ 
         [WebMethod]
         public string XoaNXB(int id)
         {
